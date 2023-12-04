@@ -6,6 +6,7 @@ USERNAME = 'sa'
 PASSWORD = 'CNMIchc*2018'
 
 connectionString = f'DRIVER={{ODBC Driver 18 for SQL Server}};SERVER={SERVER};DATABASE={DATABASE};UID={USERNAME};PWD={PASSWORD};Encrypt=no;TrustServerCertificate=yes'
+
 conn = pyodbc.connect(connectionString)
 
 SQL_QUERY = """
